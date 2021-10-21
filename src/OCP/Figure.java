@@ -1,5 +1,7 @@
 package OCP;
 
-public abstract class Figure {
-	public abstract void draw();
+public interface Figure {
+	public void draw();
+
+	public double getArea();
 }
