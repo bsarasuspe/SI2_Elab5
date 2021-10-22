@@ -1,5 +1,7 @@
 package LSK;
 
-public class ProjectFile {
+public interface ProjectFile {
+
+	void loadFile();
 
 }
