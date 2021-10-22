@@ -2,7 +2,6 @@ package OCP;
 
 public class main {
 
-	
 	public static void main(String[] args) {
 		
 		Sheet s = new Sheet();
@@ -18,7 +17,6 @@ public class main {
 		s.addFigure(sq);
 		
 		s.drawFigures();
-		s.getArea();
-		
+		s.getArea(); 
 	}
 }

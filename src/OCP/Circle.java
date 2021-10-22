@@ -9,15 +9,12 @@ public class Circle implements Figure {
 
 	@Override
 	public void draw() {
-		// TODO Auto-generated method stub
 		System.out.println("Zirkulua marraztu");
 		
 	}
 
 	@Override
 	public double getArea() {
-		
 		return Math.PI*(diameter/2)*(diameter/2);
-		
 	}
 }

@@ -9,14 +9,11 @@ public class Square implements Figure {
 	
 	@Override
 	public void draw() {
-		// TODO Auto-generated method stub
 		System.out.println("Karratua marraztu");
-		
 	}
 
 	@Override
 	public double getArea() {
 		return length*length;
-		
 	}
 }
