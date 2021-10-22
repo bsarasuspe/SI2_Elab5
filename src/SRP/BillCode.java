@@ -2,7 +2,7 @@ package SRP;
 
 import java.util.Date;
 
-public class Bill implements BillInterface {
+public class BillCode implements BillInterface {
 	public String code;
 	public Date billDate;
 	public float billAmount;
@@ -13,7 +13,7 @@ public class Bill implements BillInterface {
 	//public CalcBillDeductionInterface b = new CalcBillDeduction();
 	//public CalcVATInterface c = new CalcVAT16();
 	
-	public Bill(String pCode, double pBillAmount) {
+	public BillCode(String pCode, double pBillAmount) {
 		this.code = pCode;
 		this.billAmount = (float) pBillAmount;
 	}
@@ -24,7 +24,11 @@ public class Bill implements BillInterface {
 		// Dedukzioa kalkulatu
 		billDeduction = b.CalcBillDeduction(billAmount);
 		// VAT kalkulatzen dugu
-		VAT = c.calcVAT(billAmount);
+		if (code.equals("0")) {
+			VAT = 0;
+		}else {
+			VAT = c.calcVAT(billAmount);
+		}
 		// Totala kalkulatzen dugu
 		billTotal = (billAmount - billDeduction) + VAT;
 		}
