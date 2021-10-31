@@ -27,7 +27,7 @@ public class Student {
 				
 				// Irakasgaiaren prezioa lortu
 				SubjectQuotes sq=new SubjectQuotes();
-				int quote = sq.getPrice(subject);
+				int quote = sq.getPrice(subject); 
 				
 				// HashMap batean gordetzen du eta ordaindu behar duen balioa eguneratu
 				subjectRecord.put(subject,null);
